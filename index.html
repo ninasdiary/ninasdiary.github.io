@@ -36,8 +36,8 @@
 
 <h1>Date Ideas for Neel and Nina</h1>
 
-<p>Choose a number between 1 and 150:</p>
-<input type="number" id="userChoice" min="1" max="150" required>
+<p>Choose a number between 1 and 100:</p>
+<input type="number" id="userChoice" min="1" max="100" required>
 <button onclick="generateDateIdea()">Generate Date Idea</button>
 
 <p id="dateIdea"></p>
@@ -47,7 +47,7 @@
         const userChoice = document.getElementById('userChoice').value;
         const dateIdeaContainer = document.getElementById('dateIdea');
 
-        if (userChoice >= 1 && userChoice <= 150) {
+        if (userChoice >= 1 && userChoice <= 100) {
             const dateIdeas = [
               "Cook dinner together.",
               "Go for a scenic walk in the park.",
@@ -157,7 +157,7 @@
             const dateIdea = dateIdeas[userChoice - 1];
             dateIdeaContainer.textContent = `Your date night idea: ${dateIdea}`;
         } else {
-            dateIdeaContainer.textContent = "Invalid choice. Please choose a number between 1 and 150.";
+            dateIdeaContainer.textContent = "Invalid choice. Please choose a number between 1 and 100.";
         }
     }
 </script>
